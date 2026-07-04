@@ -1,3 +1,5 @@
+import PageNav from "../components/PageNav";
+
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-[#0B0B0B] text-white">
@@ -33,7 +35,7 @@ export default function AboutPage() {
       <section className="mx-auto grid max-w-7xl gap-8 px-6 pb-24 lg:grid-cols-2">
         <div className="rounded-3xl border border-[#D4AF37]/30 bg-[#181818] p-10">
           <h2 className="mb-6 text-4xl font-bold text-[#D4AF37]">
-            Samson's Testimony
+            Samson&apos;s Testimony
           </h2>
 
           <p className="whitespace-pre-line text-gray-300 leading-8">
@@ -53,7 +55,7 @@ My story is not about how good I am—it is about how faithful God is. Jesus Chr
 
         <div className="rounded-3xl border border-[#D4AF37]/30 bg-[#181818] p-10">
           <h2 className="mb-6 text-4xl font-bold text-[#D4AF37]">
-            Tyler's Testimony
+            Tyler&apos;s Testimony
           </h2>
 
           <p className="whitespace-pre-line text-gray-300 leading-8">
@@ -83,6 +85,11 @@ God reignited his faith, and now He has led Tyler and his best friend to start a
           </p>
         </div>
       </section>
+
+      <PageNav
+        previous={{ label: "Home", href: "/" }}
+        next={{ label: "What We Believe", href: "/beliefs" }}
+      />
     </main>
   );
 }
